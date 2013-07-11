@@ -118,6 +118,17 @@
       <artifactId>hsqldb</artifactId>
       <version>2.2.8</version>
     </dependency>
+    <dependency>
+    	<groupId>org.mybatis.caches</groupId>
+   		<artifactId>mybatis-ehcache</artifactId>
+  		<version>1.0.2</version>
+  		<exclusions>
+  			<exclusion>
+          		<groupId>org.slf4j</groupId>
+          		<artifactId>slf4j-api</artifactId>
+          	</exclusion>
+        </exclusions>
+    </dependency>
   </dependencies>
 
   <build>
